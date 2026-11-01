@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#efeee7" />
+    <meta
+      name="description"
+      content="How Lete handles local library data, optional Google Drive synchronization and website visits."
+    />
+    <link rel="canonical" href="https://sangreprimitiva.github.io/privacy.html" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./site.js" defer></script>
+    <title>Privacy policy — Lete</title>
+  </head>
+  <body data-page="privacy">
+    <a class="skip-link" href="#main" data-en="Skip to content" data-es="Ir al contenido"
+      >Skip to content</a
+    >
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Lete"
+        ><img src="./logo.svg" width="34" height="34" alt="" /><span
+          >lete<span class="brand-dot">.</span></span
+        ></a
+      >
+      <nav
+        class="main-nav"
+        aria-label="Main navigation"
+        data-label-en="Main navigation"
+        data-label-es="Navegación principal"
+      >
+        <a href="./" data-en="App" data-es="App">App</a
+        ><a href="./privacy.html" aria-current="page" data-en="Privacy" data-es="Privacidad"
+          >Privacy</a
+        ><a href="./terms.html" data-en="Terms" data-es="Términos">Terms</a>
+      </nav>
+      <div
+        class="language-control"
+        role="group"
+        aria-label="Language"
+        data-label-en="Language"
+        data-label-es="Idioma"
+      >
+        <button type="button" data-set-language="en" aria-pressed="true" lang="en">EN</button
+        ><button type="button" data-set-language="es" aria-pressed="false" lang="es">ES</button>
+      </div>
+    </header>
+    <main id="main" class="document content-width">
+      <article data-language="en">
+        <header class="document-header">
+          <p class="document-date">Effective date: November 1, 2026</p>
+          <h1>Privacy policy</h1>
+          <p>
+            Lete is an EPUB reader and reading tracker for Windows and Android. This policy explains
+            what the apps store, what optional online features send, and how this website is hosted.
+          </p>
+        </header>
+        <section>
+          <h2>Data on your device</h2>
+          <p>
+            Your library is stored locally: EPUB files, physical-book records, titles and other
+            metadata, covers, editions, percentages and precise reading positions, ratings,
+            annotations, collections and their order, tier lists, reading sessions and statistics,
+            and language, theme and reader preferences.
+          </p>
+          <p>
+            Lete does not operate a server that receives your library. The apps do not include
+            advertising, developer analytics, telemetry or AI features. Your books, notes and Google
+            data are not sold, used for advertising or used to train AI or machine-learning models.
+          </p>
+        </section>
+        <section>
+          <h2>Optional Google Drive synchronization</h2>
+          <p>
+            Connecting Google is optional. If you connect, Lete requests
+            <code>https://www.googleapis.com/auth/drive.appdata</code> to read and write its hidden
+            application-data folder in your Google Drive. This permission does not give Lete access
+            to your normal Drive documents.
+          </p>
+          <p>
+            Synchronization transfers your library metadata and its files between Drive and your
+            authorized Lete installations. This includes EPUBs, custom covers, physical-book
+            records, editions, precise EPUB CFI positions, progress, ratings, notes, collections,
+            tier lists, reading sessions and preferences. Authorization tokens and client secrets
+            are not included in Drive library snapshots or exported backups.
+          </p>
+          <p>
+            Google sign-in on Android also provides basic identity information through OpenID, email
+            and profile permissions. The native sign-in component processes that identity
+            information to authorize your account. Lete stores the account email with its local
+            connection settings; it does not use your profile for advertising.
+          </p>
+          <p>
+            Google API data is used only for the reading and synchronization functions you request,
+            including an export you choose to make. Lete’s access to, use of and transfer of
+            information received from Google APIs follows the
+            <a href="https://developers.google.com/terms/api-services-user-data-policy"
+              >Google API Services User Data Policy</a
+            >, including its
+            <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use"
+              >Limited Use requirements</a
+            >. No Google user data is transferred to a developer-operated backend.
+          </p>
+        </section>
+        <section>
+          <h2>Metadata and cover searches</h2>
+          <p>
+            When you search for a book, Lete sends the search text to Open Library. Selecting a
+            result can request its description and cover from Open Library and its cover service.
+            These services receive normal network information, such as your IP address. Lete does
+            not upload your EPUB files or annotations to Open Library.
+          </p>
+        </section>
+        <section>
+          <h2>Security and backups</h2>
+          <p>
+            Online connections use HTTPS. Windows protects saved Google credentials with Windows
+            DPAPI for the current user. Android protects the native sign-in component’s saved tokens
+            using Android Keystore encryption. Access tokens used by the interface are kept in
+            memory.
+          </p>
+          <p>
+            Your local book library and exported ZIP backups are not encrypted by Lete. A complete
+            backup contains your library files and reading data, so choose where you store or share
+            it. These protections reduce risk; they do not guarantee that a device, account or
+            backup cannot be compromised.
+          </p>
+        </section>
+        <section>
+          <h2>Disconnecting, retention and deletion</h2>
+          <p>
+            Disconnecting in Lete removes its saved account connection and stops synchronization
+            from that installation. It does not delete your local library or the copy already stored
+            in Google Drive. You can separately revoke Lete’s authorization in your Google account’s
+            third-party connections.
+          </p>
+          <p>
+            To remove the cloud copy, delete Lete’s hidden application data in Google Drive under
+            Settings → Manage apps. Disconnect your Lete installations first so they do not upload
+            their local copies again. Uninstalling or revoking access alone does not delete the
+            Drive copy.
+          </p>
+          <p>
+            Deleting an item in the app removes it from the active library. Previous metadata
+            snapshots and immutable synchronization files may remain for recovery and offline
+            devices; this is not immediate erasure of every stored copy. Remove local app data and
+            the Drive application data if you want to erase the whole library. Delete separately any
+            exported backups you kept.
+          </p>
+          <p>
+            On Windows, the uninstaller preserves local library data by default and offers a
+            separate option to remove it. On Android, uninstalling removes the app’s private local
+            data. Data and backups remain for as long as you keep those copies.
+          </p>
+        </section>
+        <section>
+          <h2>Support messages</h2>
+          <p>
+            If you email
+            <a href="mailto:lete-app-support@googlegroups.com">lete-app-support@googlegroups.com</a
+            >, your message and any attachments are handled through Google Groups for support. Share
+            only the information needed to explain the issue. Do not send account passwords or
+            authorization tokens.
+          </p>
+        </section>
+        <section>
+          <h2>This website</h2>
+          <p>
+            This public information website is hosted by GitHub Pages, separately from the Lete apps
+            and your library. GitHub may process technical information about visits, including IP
+            addresses and request information, under its
+            <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              >Privacy Statement</a
+            >.
+          </p>
+          <p>
+            The website has no developer-added analytics or advertising. It stores only your
+            selected site language in your browser’s local storage. Its fonts and images do not
+            require a third-party font or image service. Visiting this website does not upload your
+            Lete library or connect your Google account.
+          </p>
+        </section>
+        <section>
+          <h2>Updates and contact</h2>
+          <p>
+            Changes will be reflected on this page with a new effective date. A new use of Google
+            account data would require an updated disclosure and any consent required by Google’s
+            policies.
+          </p>
+          <p>
+            For privacy questions or a request concerning a support message, contact
+            <a href="mailto:lete-app-support@googlegroups.com">lete-app-support@googlegroups.com</a
+            >. Library and Drive data remain under your control using the deletion options above.
+          </p>
+        </section>
+      </article>
+      <article data-language="es" hidden>
+        <header class="document-header">
+          <p class="document-date">Fecha de vigencia: 1 de noviembre de 2026</p>
+          <h1>Política de privacidad</h1>
+          <p>
+            Lete es un lector EPUB y un registro de lecturas para Windows y Android. Esta política
+            explica qué guardan las apps, qué envían las funciones opcionales en línea y cómo se
+            aloja este sitio web.
+          </p>
+        </header>
+        <section>
+          <h2>Datos en tu dispositivo</h2>
+          <p>
+            Tu biblioteca se guarda localmente: archivos EPUB, registros de libros físicos, títulos
+            y otros metadatos, portadas, ediciones, porcentajes y posiciones precisas de lectura,
+            puntuaciones, anotaciones, colecciones y su orden, tier lists, sesiones y estadísticas
+            de lectura, y preferencias de idioma, tema y lector.
+          </p>
+          <p>
+            Lete no opera un servidor que reciba tu biblioteca. Las apps no incluyen publicidad,
+            analítica del desarrollador, telemetría ni funciones de inteligencia artificial. Tus
+            libros, notas y datos de Google no se venden, no se usan para publicidad ni para
+            entrenar modelos de inteligencia artificial o aprendizaje automático.
+          </p>
+        </section>
+        <section>
+          <h2>Sincronización opcional con Google Drive</h2>
+          <p>
+            Vincular Google es opcional. Si lo hacés, Lete solicita
+            <code>https://www.googleapis.com/auth/drive.appdata</code> para leer y escribir su
+            carpeta oculta de datos de aplicación en tu Google Drive. Este permiso no le da acceso a
+            tus documentos normales de Drive.
+          </p>
+          <p>
+            La sincronización transfiere los metadatos y archivos de tu biblioteca entre Drive y tus
+            instalaciones autorizadas de Lete. Incluye EPUB, portadas propias, registros de libros
+            físicos, ediciones, posiciones EPUB CFI precisas, progreso, puntuaciones, notas,
+            colecciones, tier lists, sesiones de lectura y preferencias. Los tokens de autorización
+            y secretos de cliente no se incluyen en las copias de la biblioteca en Drive ni en los
+            respaldos exportados.
+          </p>
+          <p>
+            El inicio de sesión de Google en Android también proporciona información básica de
+            identidad mediante los permisos OpenID, correo y perfil. El componente nativo de inicio
+            de sesión procesa esa información para autorizar tu cuenta. Lete guarda el correo de la
+            cuenta en la configuración local de conexión; no usa tu perfil para publicidad.
+          </p>
+          <p>
+            Los datos de las API de Google se usan únicamente para las funciones de lectura y
+            sincronización que solicitás, incluida una exportación que decidas realizar. El acceso,
+            uso y transferencia de información recibida de las API de Google por parte de Lete
+            respeta la
+            <a href="https://developers.google.com/terms/api-services-user-data-policy"
+              >Política de Datos del Usuario de los Servicios de las API de Google</a
+            >, incluidos sus
+            <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use"
+              >requisitos de Uso Limitado</a
+            >. No se transfieren datos de usuario de Google a un servidor del desarrollador.
+          </p>
+        </section>
+        <section>
+          <h2>Búsquedas de metadatos y portadas</h2>
+          <p>
+            Cuando buscás un libro, Lete envía el texto de búsqueda a Open Library. Al seleccionar
+            un resultado, puede solicitar su descripción y portada a Open Library y a su servicio de
+            portadas. Esos servicios reciben información normal de red, como tu dirección IP. Lete
+            no sube tus archivos EPUB ni anotaciones a Open Library.
+          </p>
+        </section>
+        <section>
+          <h2>Seguridad y respaldos</h2>
+          <p>
+            Las conexiones en línea usan HTTPS. Windows protege las credenciales guardadas de Google
+            con Windows DPAPI para el usuario actual. Android protege los tokens guardados del
+            componente nativo de inicio de sesión mediante cifrado con Android Keystore. Los tokens
+            de acceso usados por la interfaz se mantienen en memoria.
+          </p>
+          <p>
+            Lete no cifra tu biblioteca local ni los respaldos ZIP exportados. Un respaldo completo
+            contiene los archivos y datos de lectura de tu biblioteca, por lo que debés elegir dónde
+            guardarlo o compartirlo. Estas medidas reducen riesgos; no garantizan que un
+            dispositivo, cuenta o respaldo no pueda verse comprometido.
+          </p>
+        </section>
+        <section>
+          <h2>Desconexión, conservación y eliminación</h2>
+          <p>
+            Desconectarte desde Lete elimina la conexión guardada a tu cuenta y detiene la
+            sincronización desde esa instalación. No elimina tu biblioteca local ni la copia ya
+            guardada en Google Drive. Podés revocar por separado la autorización de Lete desde las
+            conexiones de terceros de tu cuenta de Google.
+          </p>
+          <p>
+            Para quitar la copia en la nube, eliminá los datos ocultos de Lete desde Google Drive,
+            en Configuración → Administrar aplicaciones. Primero desconectá tus instalaciones de
+            Lete para que no vuelvan a subir sus copias locales. Desinstalar o revocar el acceso por
+            sí solo no elimina la copia de Drive.
+          </p>
+          <p>
+            Eliminar un elemento desde la app lo quita de la biblioteca activa. Pueden conservarse
+            copias anteriores de metadatos y archivos inmutables de sincronización para recuperación
+            y dispositivos sin conexión; esto no borra inmediatamente todas las copias almacenadas.
+            Si querés borrar toda la biblioteca, eliminá los datos locales de la app y sus datos de
+            aplicación en Drive. Eliminá por separado los respaldos exportados que hayas conservado.
+          </p>
+          <p>
+            En Windows, el desinstalador conserva los datos locales de la biblioteca por defecto y
+            ofrece una opción separada para eliminarlos. En Android, desinstalar elimina los datos
+            locales privados de la app. Los datos y respaldos se conservan mientras mantengas esas
+            copias.
+          </p>
+        </section>
+        <section>
+          <h2>Mensajes a soporte</h2>
+          <p>
+            Si escribís a
+            <a href="mailto:lete-app-support@googlegroups.com">lete-app-support@googlegroups.com</a
+            >, tu mensaje y los adjuntos se gestionan mediante Google Groups para brindar soporte.
+            Compartí únicamente la información necesaria para explicar el problema. No envíes
+            contraseñas ni tokens de autorización.
+          </p>
+        </section>
+        <section>
+          <h2>Este sitio web</h2>
+          <p>
+            Este sitio público de información está alojado en GitHub Pages, de forma separada de las
+            apps de Lete y tu biblioteca. GitHub puede procesar información técnica de las visitas,
+            incluidas direcciones IP y datos de las solicitudes, según su
+            <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              >Declaración de Privacidad</a
+            >.
+          </p>
+          <p>
+            El sitio no incluye analítica ni publicidad agregada por el desarrollador. Sólo guarda
+            el idioma del sitio que elijas en el almacenamiento local del navegador. Sus tipografías
+            e imágenes no requieren un servicio externo. Visitar este sitio no sube tu biblioteca de
+            Lete ni vincula tu cuenta de Google.
+          </p>
+        </section>
+        <section>
+          <h2>Actualizaciones y contacto</h2>
+          <p>
+            Los cambios se reflejarán en esta página con una nueva fecha de vigencia. Un nuevo uso
+            de datos de la cuenta de Google requeriría una declaración actualizada y el
+            consentimiento que exijan las políticas de Google.
+          </p>
+          <p>
+            Para consultas de privacidad o solicitudes relacionadas con un mensaje a soporte,
+            escribí a
+            <a href="mailto:lete-app-support@googlegroups.com">lete-app-support@googlegroups.com</a
+            >. Los datos de la biblioteca y de Drive siguen bajo tu control mediante las opciones de
+            eliminación anteriores.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer class="site-footer content-width">
+      <a href="./">Lete</a>
+      <div>
+        <a href="./privacy.html" data-en="Privacy policy" data-es="Política de privacidad"
+          >Privacy policy</a
+        ><a href="./terms.html" data-en="Terms of use" data-es="Términos de uso">Terms of use</a
+        ><a href="mailto:lete-app-support@googlegroups.com">lete-app-support@googlegroups.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
